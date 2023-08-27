@@ -162,8 +162,20 @@ document.getElementById('startNav').addEventListener('click', acelerationNAV)
 function RecruteRec(event) {
     event.preventDefault();
     
-    let firtName = prompt ("Digite o nome do novo Recruta:");
-    let lastName = prompt ("Agora digite o sobrenome:");
+    let firstName = prompt("Digite o nome do novo Recruta:");
+    let lastName = prompt("Agora digite o sobrenome:");
+
+    let digitPattern = /\d/;
+    
+    if (digitPattern.test(firstName) || digitPattern.test(lastName) || lastName === "" || firstName === "") {
+        alert("Nome/sobrenome inválido, tente novamente.");
+    } else {
+        alert("Nome/sobrenome válido.");
+    }
+
+    console.log(firtName);
+    console.log(lastName);
+
     let campoDeEstudo = prompt ("Digite o campo de estudo do recruta:");
     let birth = prompt ("Digite o ano de nascimento do recruta");
     let date = 2023;
