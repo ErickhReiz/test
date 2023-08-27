@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeusTestess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-conteiner">
+        <div class="conteinerCalc">
+            <div class="tittle">
+                <h1>Calculadora de Gorjetas</h1>
+            </div>
+            <div >
+                <div id="signIn" class="login">
+                    <button class="user" type="button"> Login </button>
+                </div>
+                <form class="tipsForm" id="tipsForm">
+                        <label for="bill">
+                            <p>Quanto ficou a conta</p>
+                        </label>
+                        <p>
+                            R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" >
+                         </p>
+                         <label for="serviceQual">
+                            <p>Como foi seu serviço?</p>
+                         </label>
+                         <p>
+                            <select name="serviceQual" id="serviceQual" class="formInput" >
+                                <option disable selected value="0">Selecione uma opção</option>
+                                <option value="0.3">30% - Incrivel</option>
+                                <option value="0.2">20% - Ótimo</option>
+                                <option value="0.15">15% - Bom</option>
+                                <option value="0.1">10% - Aceitavel</option>
+                                <option value="0.05">0,5% - Ruim</option>
+                            </select>
+                         </p>
+                         <label for="people" > 
+                            <p>Quantas pessoas vão dividir a conta:</p>
+                         </label>
+                         <p>
+                            <input type="number" placeholder="1" name="people" id="people" class="formInput"> Pessoa(s)
+                         </p>
+                         <button type="submit" class="formSubmit">Calcular</button>
+                    </form>
+                <div class="result" id="tipsResult">
+                    Gorjeta total: 
+                    <span style="color: green;">
+                            R$ <span id="tip">0.00</span>
+                        </span>
+                    <span id="each">cada</span>
+                </div>
+                <div class="payFor" id="billResult">
+                    Total a pagar:
+                    <span style="color: green;">
+                        R$ <span id="totalBill">0.00</span>
+                </span>
+                </div>
+                <div class="userInfo"> 
+                    <h3 class="nomeUser" id="nomeUser"> 
+                        Usuário: <span id="person"></span>
+                    </h3>
+                    <h3 class="ageUser" id="ageUser"> 
+                        Idade: <span id="agePerson"></span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="ageDiference">
+            <div class="tittle">
+                <h1>Diferenca de Idade</h1>
+            </div>
+            <div class="boxAge">
+                <form class="ageForm" id="ageForm"> 
+                    <div class="infoAge">
+                        <div class="people">
+                            <h3>Usuário 1: </h3>
+                            <div class="users">
+                                nome: <input type="text"placeholder= "nome" name="FirstUserName" id="FirstUserName" class="formInput">
+                            </div>
+                            <div class="ages">
+                                idade: <input type="number"placeholder= "18" name="FirstUserAge" id="FirstUserAge" class="formInput">
+                            </div>
+                        </div>
+                        <div class="people">
+                            <h3>Usuário 2: </h3>
+                            <div class="users">
+                                nome: <input type="text"placeholder="nome" name="SecondUserName" id="SecondUserName" class="formInput">
+                            </div>
+                            <div class="ages">
+                                idade: <input type="number"placeholder="18" name="SecondUserAge" id="SecondUserAge" class="formInput">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="resultAge" id="ageResult">
+                        <div class="resultUser1">
+                            User 1 <br> <br>
+                            nome: <span id="resultName1"></span> <br>
+                            idade: <span id="resultAge1"></span> <br>
+                        </div>
+
+                        <div class="resultDiference">
+                            Diferença <br>
+                            <span id="diferenceAges" class="diferenceAges"></span>
+                        </div>
+                        <div class="resultUser2">
+                            User 2 <br> <br>
+                            nome: <span id="resultName2"></span> <br>
+                            idade: <span id="resultAge2"></span> <br>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit" class="formSubmit"> Calcular</button>
+                    </div>
+
+                </form>  
+            </div>
+
+        </div>
+        <div class="nav">
+            <div class="tittle">
+                <h1>Começar a nevegar</h1>
+            </div>
+            <div class="startNavegation">
+                <form class="navegation" id="navegation">
+                    <button class="formSubmit" id="startNav">ligar nav</button>
+                </form>
+                <div class="navInfo">
+                    <div class="navResult" id="navResult">
+                        <h3 class="subTittle">Piloto</h3>
+                        <div class="topInfos">
+                            nome: <span id="userPilot"></span> <br>
+                            velocidade: <span id="navVelocity"></span> <br>
+                        </div>
+                        <span id="infoVelocity"> status: </span> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cadastro">
+            <div class="tittle">
+                <h1>Cadastro de recruta</h1>
+            </div>
+            <div class="boxCadastro">
+                    <button class="formSubmit" id="calcRec">Cadastrar</button>
+            </div>
+        </div>
+
+        <div class="testeVelocidade">
+            <div class="tittle">
+                <h1>teste de velocidade</h1>
+            </div>
+            <div class="boxVelociry">
+                <button class="formSubmit" id="calcVelocity">Testar</button>
+            </div>
+        </div>
+    
+        <div class="calcDamage">
+            <div class="tittle">
+                <h1>Cálculo de Dano</h1>
+            </div>
+            <div class="boxDamege">
+                <button class="formSubmit" id="calcDamege">Calcular</button>
+            </div>
+        </div>
+
+        <div class="calcMed">
+            <div class="tittle">
+                <h1>Conversor de Medidas</h1>
+            </div>
+            <div class="boxMed">
+                <button class="formSubmit" id="measurementConverter">Calcular</button>
+            </div>
+        </div>
+
+        <div class="tripTourist">
+            <div class="tittle">
+                <h1>Cidades viajadas</h1>
+            </div>
+            <div class="boxCitys">
+                <button class="formSubmit" id="tripTourist">Calcular</button>
+            </div>
+            <div class="resultCity" id="resultCity">
+                <p class="cityvalue" id="cityvalue">
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="interativeMenu">
+            <div class="tittle">
+                <h1>Menu interativo</h1>
+            </div>
+            <div class="boxCitys">
+                <button class="formSubmit" id="menuInt">Interagir</button>
+            </div>
+        </div>
+        
+        <div class="finance">
+            <div class="tittle">
+                <h1>Controle Financeiro</h1>
+            </div>
+            <div class="boxFinance">
+                <button class="formSubmit" id="invest">Controlar</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

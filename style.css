@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --main-bg-color: lightcoral;
+    --main: white;
+    --border: 2px black ;
+    --secondary-color: dimgrey;
+    --tertiary-color: gainsboro;
+}
+
+
+body {
+    background-color: var(--main-bg-color);
+    font-size: 15px;
+    font-family: 'Lato', 'sans-serif';
+    padding: 0px;
+    margin: 0px;
+}
+
+.conteinerCalc {
+    background-color: var(--main);
+    align-items: center;
+    height: auto;
+    width: 700px;
+    text-align: center;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+}
+
+
+ .tittle {
+    background-color: var(--secondary-color);
+    color: var(--main);
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.conteinerCalc .tipsForm{
+    text-align: left;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-left: 25%;
+}
+
+
+
+.conteinerCalc select, input {
+    min-width: 2rem;
+}
+
+.conteinerCalc .formInput {
+    padding: 5px 5px 8px 8px;
+}
+
+.conteinerCalc .formInput:focus {
+    border: 3px solid var(--main-bg-color);
+    outline: none;
+}
+
+.conteinerCalc .formSelect {
+    width: 100px;
+    padding: 5px;
+}
+
+ .formSubmit {
+    text-transform: uppercase;
+    font-weight: block;
+    margin: 30px auto;
+    background: var(--main-bg-color);
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    color: var(--main);
+    border: var(--border);
+    box-shadow: 2px 2px 2px black;
+
+} 
+
+.result, .payFor {
+    margin: 2rem;
+    font-size: 20px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+
+.conteinerCalc .formSubmit:hover {
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+
+.conteinerCalc .formSubmit:active {
+    position:relative;
+	top:1px;
+}
+
+.login {
+    margin: 0rem 2rem;
+    margin-top: 0px;
+    display: block;
+    text-align: start;
+    align-items: right;
+}
+
+.userInfo {
+    margin: 0rem 2rem;
+    text-align: left;
+}
+
+.ageDiference {
+    background-color: var(--main);
+    height: auto;
+    width: 700px;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+    
+}
+
+.ageDiference .boxAge {
+    margin: 3rem;
+    display: flex;
+}
+
+
+.ageDiference .people {
+    margin: 1rem;
+    text-transform: capitalize; 
+}
+
+.ageDiference .infoAge {
+    display: flex;
+}
+
+.ageDiference .users, .ages {
+    margin: 1rem;
+}
+
+.ageDiference .button {
+    display: flex;
+    align-items: center;
+}
+
+.resultUser1 {
+    display: block;
+}
+
+.resultAge {
+    justify-content: space-between;
+    display: flex;
+    text-transform: capitalize;
+}
+
+.diferenceAges {
+    color: green;
+}
+
+.resultDiference {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.nav {
+    background-color: var(--main);
+    height: auto;
+    width: 700px;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navInfo {
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.subTittle {
+    text-align: center;
+    padding: 1rem;
+    text-decoration: underline;
+}
+
+#infoVelocity {
+    text-transform: none;
+    margin-top: 0px;
+}
+
+.topInfos {
+    text-align: center;
+}
+
+.cadastro {
+    background-color: var(--main);
+    height: auto;
+    width: 700px;
+    text-align: center;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+}
+
+
+.cadastro .boxCadastro {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'lato';
+}
+
+.cadastro .boxCadastro .nameRec, .otherInfo {
+   padding: .5rem;
+}
+
+
+.testeVelocidade {
+    background-color: var(--main);
+    height: auto;
+    width: 700px;
+    text-align: center;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+}
+
+.testeVelocidade .boxVelociry {
+    margin: .5rem;
+    padding: 2rem;  
+}
+
+.calcDamage {
+    background-color: var(--main);
+    height: auto;
+    width: 700px;
+    text-align: center;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+}
+
+.calcDamage .boxDamege { 
+    margin: .5rem;
+    padding: 2rem;  
+}
+
+.calcMed {
+    background-color: var(--main);
+    height: auto;
+    width: 700px;
+    text-align: center;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+}
+
+.boxMed {
+    margin: .5rem;
+    padding: 2rem;  
+}
+
+.tripTourist {
+    background-color: var(--main);
+    height: auto;
+    width: 700px;
+    text-align: center;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+}
+
+
+.boxCitys {
+    margin: .5rem;
+    padding: 2rem;  
+}
+
+#resultCity {
+    padding: 2rem;
+
+}
+
+.cityvalue {
+    margin: .5rem;
+    font-size: medium;
+}
+
+.interativeMenu {
+    background-color: var(--main);
+    height: auto;
+    width: 700px;
+    text-align: center;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+}
+
+.finance {
+    background-color: var(--main);
+    height: auto;
+    width: 700px;
+    text-align: center;
+    margin: 100px auto;
+    -webkit-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);
+    box-shadow: -1px 13px 31px 0px rgba(158,158,158,1);;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 26px 26px 26px 26px;
+    -webkit-border-radius: 26px 26px 26px 26px;
+}
+
+.boxFinance {
+    margin: .5rem;
+    padding: 2rem;  
+}
